@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Zendesk Sidebar",
+  "description": "Zendesk for Opera sidebar extention.",
+  "developer": {
+    "name": "Paulo Albuquerque",
+    "url": "https://github.com/pjalbuquerque/"
+  },
+  "version": "1.0.0",
+  "icons": {
+    "16": "icons/16.png",
+    "19": "icons/19.png",
+    "38": "icons/38.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://pixtertechnology.zendesk.com/*",
+    "https://accounts.google.com/*",
+    "https://accounts.google.com.br/*"
+  ],
+  "background": { "scripts": ["background.js"] },
+  "sidebar_action": {
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png"
+    },
+    "default_title": "Zendesk",
+    "default_panel": "sidebar.html"
+  }
+}
