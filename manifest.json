@@ -9,27 +9,28 @@
   },
   "version": "1.0.0",
   "icons": {
-    "16": "icons/16.png",
-    "19": "icons/19.png",
-    "38": "icons/38.png",
-    "48": "icons/48.png",
-    "128": "icons/128.png"
+    "16": "src/icons/16.png",
+    "19": "src/icons/19.png",
+    "38": "src/icons/38.png",
+    "48": "src/icons/48.png",
+    "128": "src/icons/128.png"
   },
 
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "https://pixtertechnology.zendesk.com/*",
+    "https://*.zendesk.com/*",
     "https://accounts.google.com/*",
     "https://accounts.google.com.br/*"
   ],
-  "background": { "scripts": ["background.js"] },
+  "background": { "scripts": ["src/js/background.js"] },
   "sidebar_action": {
     "default_icon": {
-      "19": "icons/19.png",
-      "38": "icons/38.png"
+      "19": "src/icons/19.png",
+      "38": "src/icons/38.png"
     },
     "default_title": "Zendesk",
-    "default_panel": "sidebar.html"
-  }
+    "default_panel": "src/sidebar.html"
+  },
+  "options_page": "src/options.html"
 }

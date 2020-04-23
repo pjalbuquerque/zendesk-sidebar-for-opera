@@ -1,0 +1,56 @@
+html,
+body,
+iframe {
+  background-color: white;
+  border: none;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+.options {
+  background: #cae2ec;
+  position: relative;
+}
+
+.options h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.options .main {
+  width: 550px;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px;
+}
+
+.options .main div label,
+.options .main .url {
+  display: block;
+  font-size: 20px;
+}
+
+.options .main div input {
+  width: 350px;
+  height: 30px;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.options .main div .button {
+  font-size: 15px;
+  padding: 10px 15px;
+}
+
+.clear {
+  text-align: center;
+}
+
+.config {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
