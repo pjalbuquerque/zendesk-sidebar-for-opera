@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Zendesk Options</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/options.js"></script>
-  </head>
-  <body class="options">
-    <div class="main">
-      <h1>CONFIG ZENDESK</h1>
-      <div class="url">
-        <label for="urlZendesk">URL</label>
-        <div>
-          <input type="text" id="urlZendesk" name="urlZendesk" />
-          <span>.zendesk.com</span>
-        </div>
-        <button class="button" id="save">SALVAR</button>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Zendesk Options</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/options.js"></script>
+</head>
+
+<body class="options">
+  <div class="main">
+    <img class="logo" src="icons/zendesk-logo.svg" />
+    <h1>Configure your channel.</h1>
+    <div class="url">
+      <label class="label-url" for="urlZendesk">Channel name</label>
+      <div class="group-input">
+        <input type="text" id="urlZendesk" name="urlZendesk" placeholder="examplechannel" />
+        <span>.zendesk.com</span>
       </div>
+      <button class="button" id="save">salvar e entrar</button>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

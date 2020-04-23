@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
 html,
 body,
 iframe {
@@ -9,42 +15,109 @@ iframe {
   padding: 0;
   width: 100%;
 }
-
 .options {
-  background: #cae2ec;
-  position: relative;
+  background: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 .options h1 {
-  text-align: center;
-  font-size: 30px;
+  font-size: 26px;
+  color: #03363d;
+  font-weight: 600;
+  font-family: sharp sans, Arial, sans-serif;
+  line-height: calc(1em + 8px);
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .options .main {
-  width: 550px;
+  width: 100%;
+  max-width: 430px;
   margin: 50px auto;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 40px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(102, 102, 102, 0.15);
+  border-radius: 5px;
+  padding: 50px;
+  position: relative;
 }
-
+.options .logo {
+  left: 0;
+  top: -50px;
+  position: absolute;
+  width: 120px;
+}
+.options .main .title {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.options .main .label-url{
+  font-size: 12px;
+}
 .options .main div label,
 .options .main .url {
   display: block;
   font-size: 20px;
 }
-
-.options .main div input {
-  width: 350px;
-  height: 30px;
+.options .main .group-input {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.options .main .group-input input {
+  width: 100%;
   font-size: 15px;
-  margin: 10px 0;
+  border: 1px solid #999;
+  border-radius: 0;
+  margin: 8px 0;
+  padding: 16px 100px 16px 16px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
+.options .main .group-input input:focus {
+  border: 1px solid rgba(92, 97, 196);
+  box-shadow: 0 0 0 5px rgba(92, 97, 196, 0.3);
+}
+
+.options .main .group-input span {
+  position: absolute;
+  right: 8px;
+  font-size: 14px;
+  color: #aaa;
+}
 .options .main div .button {
-  font-size: 15px;
-  padding: 10px 15px;
+  padding: 15px;
+  background-color: #30aabc;
+  border: 2px solid #30aabc;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 8px;
 }
-
+.options .main div .button:hover {
+  background-color: #1c8a93;
+  border: 2px solid #1c8a93;
+}
+.options .main div .button:active {
+  background: #00454f;
+  outline: none;
+  border: 2px solid #00454f;
+}
 .clear {
   text-align: center;
 }
