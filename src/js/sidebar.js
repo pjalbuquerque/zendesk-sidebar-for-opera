@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   var urlZendesk = localStorage.getItem("urlZendesk");
   if (!urlZendesk || urlZendesk == "" || urlZendesk == "null") {
     document.body.innerHTML = `<div class="config">
-    You need to configure the application <a href="options.html">Option</a>
+    You need to configure the application <a href="options.html" target="_blank">Option</a>
   </div>;`;
     return;
   }
